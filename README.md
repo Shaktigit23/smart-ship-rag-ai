@@ -7,32 +7,48 @@ scalability, and validation metrics) were not defined."""
 
 
 # Smart Ship AI – RAG + LLM Application
+# Industrial RAG + LLM Predictive Maintenance System using Amazon Bedrock, FAISS, Streamlit, and Generative AI.
+
 # Author - Shaktiprasad Rudrawar
 
 # AI Engineer Project – Smart Ship AI
 
-## Overview
+## Features
 
-Smart Ship AI is an industrial AI application built using:
+- Vessel telemetry analysis
+- Root Cause Analysis (RCA)
+- Predictive maintenance
+- AI troubleshooting guidance
+- Remediation recommendations
+- FAISS vector search
+- Bedrock LLM integration
+- Streamlit interactive dashboard
 
+## Tech Stack
+
+- Python
+- Streamlit
 - Amazon Bedrock
 - Titan Embeddings
-- FAISS Vector Database
-- Retrieval-Augmented Generation (RAG)
-- Amazon Nova / Claude LLM
-
-The system analyzes vessel operational data and provides:
-
-- Root Cause Analysis (RCA)
-- Fault Detection
-- Severity Analysis
-- Troubleshooting Guidance
-- Remediation Recommendations
+- Amazon Nova
+- FAISS
+- LangChain
+- Pandas
 
 ---
 
-# Architecture
+## Architecture
+Telemetry CSV
+→ Preprocessing
+→ RCA Rule Engine
+→ Titan Embeddings
+→ FAISS Vector DB
+→ RAG Retrieval
+→ Amazon Nova LLM
+→ Streamlit Dashboard
 
+
+# Set up
 Raw CSV Data
 ↓
 Data Engineering (Pandas)
@@ -53,39 +69,23 @@ AI Generated Answers
 
 ---
 
-# Technologies Used
-
-- Python
-- Pandas
-- LangChain
-- Amazon Bedrock
-- Titan Embeddings
-- FAISS
-- boto3
-
----
-
-# Features
-
-- Vessel anomaly detection
-- Predictive maintenance support
-- Root cause analysis
-- Semantic search
-- AI-powered troubleshooting
-- Retrieval-Augmented Generation (RAG)
-
----
-
 # Project Structure
 
 project/
 
-├── app.py  
-├── prepare_data.py  
-├── sample.csv  
-├── enhanced_ship_data.csv  
-├── requirements.txt  
-└── README.md  
+├── app.py
+├── prepare_data.py
+├── streamlit_app.py
+├── sample.csv
+├── enhanced_ship_data.csv
+├── requirements.txt
+├── README.md
+├── .gitignore
+├── .env
+├── faiss_index/
+│   ├── index.faiss
+│   └── index.pkl
+
 
 ---
 
